@@ -1,0 +1,23 @@
+{
+  "name": "custom-media-postcss",
+  "version": "1.0.1",
+  "description": "use future css with @custom-media demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [
+    "postcss",
+    "future",
+    "css",
+    "custom-media"
+  ],
+  "author": "tanangular",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-custom-media": "^8.0.0"
+  },
+  "dependencies": {
+    "vite": "^2.7.10"
+  }
+}

@@ -1,0 +1,56 @@
+@custom-media --small-viewport (min-width: 600px);
+@custom-media --medium-viewport (min-width: 800px);
+@custom-media --large-viewport (min-width: 1200px);
+
+:root {
+  --small: "small breakpoint";
+  --medium: "medium breakpoint";
+  --large: "large breakpoint";
+  --content: "default breakpoint";
+
+  background: var(--color, grey);
+  margin: 2rem;
+}
+
+body::before {
+  content: var(--content);
+  display: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media (--small-viewport) {
+  :root {
+    --color: lightblue;
+    --content: var(--small);
+  }
+}
+
+@media (--medium-viewport) {
+  :root {
+    --color: lightgreen;
+    --content: var(--medium);
+  }
+}
+
+@media (--large-viewport) {
+  :root {
+    --color: lightpink;
+    --content: var(--large);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
